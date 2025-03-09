@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 237.69 1% 22%; /* Base-100 */
+		--foreground: 210 25% 70%; /* Base-content */
+
+		--muted: 237.69 1% 20%; /* Base-200 */
+		--muted-foreground: 210 25% 70%; /* Neutral-content */
+
+		--popover: 237.69 1% 22%; /* Base-100 */
+		--popover-foreground: 210 25% 70%; /* Base-content */
+
+		--card: 237.69 1% 18%; /* Base-300 */
+		--card-foreground: 210 25% 70%; /* Base-content */
+
+		--border: 237.69 1% 28%; /* Neutral (lightened slightly for borders) */
+		--input: 237.69 1% 28%; /* Neutral */
+
+		--primary: 12 95% 65%; /* Primary */
+		--primary-foreground: 0 0% 100%; /* Primary-content */
+
+		--secondary: 333 85% 70%; /* Secondary */
+		--secondary-foreground: 0 0% 100%; /* Secondary-content */
+
+		--accent: 265 77% 70%; /* Accent */
+		--accent-foreground: 0 0% 100%; /* Accent-content */
+
+		--destructive: 0 90% 85%; /* Error */
+		--destructive-foreground: 0 0% 0%; /* Error-content */
+
+		--ring: 12 95% 65%; /* Primary */
+
+		--info: 190 60% 65%; /* Info */
+		--info-foreground: 0 0% 0%; /* Info-content */
+
+		--success: 120 50% 80%; /* Success */
+		--success-foreground: 0 0% 0%; /* Success-content */
+
+		--warning: 35 75% 70%; /* Warning */
+		--warning-foreground: 0 0% 0%; /* Warning-content */
+
+		--radius: 1.2rem; /* Matches --rounded-box */
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}

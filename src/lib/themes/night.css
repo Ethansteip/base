@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 217 28% 15%; /* Base-100 */
+		--foreground: 217 32% 87%; /* Neutral-content */
+
+		--muted: 217 28% 18%; /* Neutral */
+		--muted-foreground: 217 32% 87%; /* Neutral-content */
+
+		--popover: 217 28% 15%; /* Base-100 */
+		--popover-foreground: 217 32% 87%; /* Neutral-content */
+
+		--card: 217 28% 20%; /* Slightly lighter Neutral */
+		--card-foreground: 217 32% 87%; /* Neutral-content */
+
+		--border: 217 20% 25%; /* Neutral border tone */
+		--input: 217 20% 25%; /* Neutral */
+
+		--primary: 200 89% 60%; /* Primary */
+		--primary-foreground: 217 28% 15%; /* Primary-content */
+
+		--secondary: 229 80% 72%; /* Secondary */
+		--secondary-foreground: 217 28% 15%; /* Secondary-content */
+
+		--accent: 330 79% 70%; /* Accent */
+		--accent-foreground: 217 28% 15%; /* Accent-content */
+
+		--destructive: 350 90% 70%; /* Error */
+		--destructive-foreground: 217 28% 15%; /* Error-content */
+
+		--ring: 200 89% 60%; /* Primary */
+
+		--info: 197 89% 58%; /* Info */
+		--info-foreground: 0 0% 0%; /* Info-content */
+
+		--success: 168 67% 60%; /* Success */
+		--success-foreground: 0 0% 0%; /* Success-content */
+
+		--warning: 43 89% 66%; /* Warning */
+		--warning-foreground: 0 0% 0%; /* Warning-content */
+
+		--radius: 0.5rem; /* Default radius */
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}

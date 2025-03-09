@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 220 26% 94%; /* Base-100 */
+		--foreground: 220 17% 20%; /* Base-content */
+
+		--muted: 220 21% 90%; /* Base-200 */
+		--muted-foreground: 220 17% 20%; /* Neutral-content */
+
+		--popover: 220 26% 94%; /* Base-100 */
+		--popover-foreground: 220 17% 20%; /* Base-content */
+
+		--card: 220 15% 85%; /* Base-300 */
+		--card-foreground: 220 17% 20%; /* Neutral-content */
+
+		--border: 220 13% 75%; /* Neutral */
+		--input: 220 13% 75%; /* Neutral */
+
+		--primary: 220 40% 50%; /* Primary */
+		--primary-foreground: 0 0% 100%; /* Primary-content */
+
+		--secondary: 210 40% 70%; /* Secondary */
+		--secondary-foreground: 0 0% 100%; /* Secondary-content */
+
+		--accent: 190 45% 65%; /* Accent */
+		--accent-foreground: 0 0% 100%; /* Accent-content */
+
+		--destructive: 350 60% 55%; /* Error */
+		--destructive-foreground: 0 0% 100%; /* Error-content */
+
+		--ring: 220 40% 50%; /* Primary */
+
+		--info: 300 25% 65%; /* Info */
+		--info-foreground: 0 0% 100%; /* Info-content */
+
+		--success: 110 40% 60%; /* Success */
+		--success-foreground: 0 0% 100%; /* Success-content */
+
+		--warning: 45 75% 65%; /* Warning */
+		--warning-foreground: 0 0% 100%; /* Warning-content */
+
+		--radius: 0.4rem; /* Matches --rounded-box */
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
