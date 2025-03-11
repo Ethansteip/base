@@ -3,8 +3,8 @@
 	import { onMount } from 'svelte';
 	import { ChevronRight, MessageCircleCode, Shield, Zap, WandSparkles } from 'lucide-svelte';
 	import { Button } from '$lib/components/ui/button';
-	import { Card, CardContent, CardHeader, CardTitle } from '$lib/components/ui/card';
-	import IphoneMockup from '$lib/components/builder/Shad/IphoneMockup.svelte';
+	import { Card, CardContent, CardTitle } from '$lib/components/ui/card';
+	import IphoneMockup from '$lib/components/other/IphoneMockup.svelte';
 
 	let mounted = false;
 
