@@ -10,7 +10,7 @@
 	<div id="top" class="border-b bg-background">
 		<div class="flex h-16 items-center justify-between px-4">
 			<!-- Logo and Project Name -->
-			<div class="flex w-1/3 items-center gap-2">
+			<a class="flex w-1/3 items-center gap-2" href="/">
 				<div class="rounded-lg border p-2 2xl:hidden">
 					<Bird class="h-5 w-5" />
 				</div>
@@ -18,7 +18,7 @@
 					<Zap class="h-5 w-5" />
 				</div>
 				<h2 class="hidden text-sm font-semibold lg:flex">Testing Testing</h2>
-			</div>
+			</a>
 
 			<h2 class="text-sm font-semibold lg:hidden">Testing Testing</h2>
 
