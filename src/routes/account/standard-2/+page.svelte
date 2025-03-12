@@ -88,7 +88,7 @@
 									</div>
 									<div class="flex flex-col items-center gap-2 sm:flex-row sm:items-start">
 										<Button variant="outline" class="gap-2">
-											<Upload />
+											<Upload class="h-4 w-4" />
 											Upload new photo
 										</Button>
 										<Button
