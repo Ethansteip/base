@@ -5,7 +5,7 @@
 	import { Separator } from '$lib/components/ui/separator';
 	import { Avatar, AvatarFallback, AvatarImage } from '$lib/components/ui/avatar';
 	import { Switch } from '$lib/components/ui/switch';
-	import * as Tabs from '$lib/components/ui/tabs/index';
+	import { Tabs, TabsList, TabsTrigger, TabsContent } from '$lib/components/ui/tabs';
 	import { Badge } from '$lib/components/ui/badge';
 	import { Upload, Pencil } from 'lucide-svelte';
 
@@ -39,16 +39,16 @@
 		</div>
 
 		<!-- Make tabs more compact on mobile -->
-		<Tabs.Root value="general" class="w-full">
-			<Tabs.List class="flex w-full flex-row items-center justify-around gap-2">
-				<Tabs.Trigger value="general" class="w-1/3 text-xs sm:text-base">General</Tabs.Trigger>
-				<Tabs.Trigger value="notifications" class="w-1/3 text-xs sm:text-base"
-					>Notifications</Tabs.Trigger
+		<Tabs value="general" class="w-full">
+			<TabsList class="flex w-full flex-row items-center justify-around gap-2">
+				<TabsTrigger value="general" class="w-1/3 text-xs sm:text-base">General</TabsTrigger>
+				<TabsTrigger value="notifications" class="w-1/3 text-xs sm:text-base"
+					>Notifications</TabsTrigger
 				>
-				<Tabs.Trigger value="security" class="w-1/3 text-xs sm:text-base">Security</Tabs.Trigger>
-			</Tabs.List>
+				<TabsTrigger value="security" class="w-1/3 text-xs sm:text-base">Security</TabsTrigger>
+			</TabsList>
 
-			<Tabs.Content value="general" class="mt-4 sm:mt-6">
+			<TabsContent value="general" class="mt-4 sm:mt-6">
 				<div class="space-y-6 sm:space-y-8">
 					<div>
 						<h3 class="text-xl font-semibold tracking-tight sm:text-2xl">General Settings</h3>
@@ -147,9 +147,9 @@
 						<Button>Save Changes</Button>
 					</div>
 				</div>
-			</Tabs.Content>
+			</TabsContent>
 
-			<Tabs.Content value="notifications" class="mt-6">
+			<TabsContent value="notifications" class="mt-6">
 				<div class="space-y-8">
 					<div>
 						<h3 class="mb-1 text-2xl font-semibold tracking-tight">Notification Preferences</h3>
@@ -190,9 +190,9 @@
 						</div>
 					</div>
 				</div>
-			</Tabs.Content>
+			</TabsContent>
 
-			<Tabs.Content value="security" class="mt-6">
+			<TabsContent value="security" class="mt-6">
 				<div class="space-y-8">
 					<div>
 						<h3 class="mb-1 text-2xl font-semibold tracking-tight">Security Settings</h3>
@@ -245,7 +245,7 @@
 						</div>
 					</div>
 				</div>
-			</Tabs.Content>
-		</Tabs.Root>
+			</TabsContent>
+		</Tabs>
 	</div>
 </div>
